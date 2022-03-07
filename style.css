@@ -114,6 +114,21 @@ p {
   }
 }
 
+.landing_container .arrows {
+    animation: 7s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
 .welcome_conatiner {
     background-color: #000;
     width: 100%;
