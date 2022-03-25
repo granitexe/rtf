@@ -1,9 +1,11 @@
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RTF</title>
         <link rel="stylesheet" type=" text/css" title="Cool stylesheet" href="style.css">
+        <!-- fade effect -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <section id='landing'>
@@ -20,68 +22,86 @@
         </section>
         <section id="welcome">
             <div class="welcome_conatiner">
-                <h1>welcome</h1>
-                <p>
-                    Realtime Films garantiert professionelle Umsetzung von
-                    den Dreharbeiten bis zum Rendern.
-                </p>
-                <div class="showreel">
-                    <img src="resources/Foto_2.png" alt="">
-                </div>
-                <p>
-                    Seit 2017 produziert Realtime Films visuelle
-                    Inhalte und wir legen dabei Wert auf individuelle
-                    Konzepte, einen cineastischen Look und
-                    zufriedene Kunden. Wir visualisieren Ihre Ideen
-                    mit den modernsten Kameras und Auflösungen
-                    bis zu 6k, so wird jedes Detail sichtbar gemacht.
-                </p>
-                <div class="images">
-                    <div class="image">
-                        <img src="resources/Foto_3.jpg" style="wdith:100%">
+                <div class="welcome_content">
+                    <h1>welcome</h1>
+                    <p>
+                        Realtime Films garantiert professionelle Umsetzung von
+                        den Dreharbeiten bis zum Rendern.
+                    </p>
+                    <div class="showreel">
+                        <img src="resources/Foto_2.png" alt="">
                     </div>
-                    <div class="image">
-                        <img src="resources/Foto_4.jpg" style="wdith:100%">
-                    </div>
-                    <div class="image">
-                        <img src="resources/Foto_5.jpg" style="wdith:100%; height:100%">
+                    <p>
+                        Seit 2017 produziert Realtime Films visuelle
+                        Inhalte und wir legen dabei Wert auf individuelle
+                        Konzepte, einen cineastischen Look und
+                        zufriedene Kunden. Wir visualisieren Ihre Ideen
+                        mit den modernsten Kameras und Auflösungen
+                        bis zu 6k, so wird jedes Detail sichtbar gemacht.
+                    </p>
+                    <div class="images">
+                        <div class="image"
+                          data-aos="fade-up"
+                          data-aos-delay="100"
+                          data-aos-duration="1000"
+                          >
+                            <img src="resources/Foto_3.jpg" style="wdith:100%">
+                        </div>
+                        <div class="image"
+                          data-aos="fade-up"
+                          data-aos-delay="200"
+                          data-aos-duration="1000"
+                          >
+                            <img src="resources/Foto_4.jpg" style="wdith:100%">
+                        </div>
+                        <div class="image"
+                          data-aos="fade-up"
+                          data-aos-delay="350"
+                          data-aos-duration="1000"
+                          >
+                            <img src="resources/Foto_5.jpg" style="wdith:100%; height:100%">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="news">
             <div class="news_container">
-                <h1>news</h1>
-                <p>
-                    Der neueste Film auf einen Blick.
-                </p>
-                <div class="news_video">
-                    <img src="resources/Foto_6.png" alt="">
+                <div class="news_content">
+                    <h1>news</h1>
+                    <p>
+                        Der neueste Film auf einen Blick.
+                    </p>
+                    <div class="news_video">
+                        <img src="resources/Foto_6.png" alt="">
+                    </div>
+                    <h2>ORG Schulschwestern</h2>
                 </div>
-                <h2>ORG Schulschwestern</h2>
             </div>
         </section>
         <section id="showroom">
             <div class="showroom_container">
-                <h1>showroom</h1>
-                <p>
-                    Eine Auswahl der produzierten Filme.<br>
-                    Mehr Information zu den Projekten und Mitwirkenden
-                    finden Sie auf Vimeo.
-                </p>
-                <div class="showroom_video">
-                    <img src="resources/showroom_video.png" alt="">
+                <div class="showroom_content">
+                    <h1>showroom</h1>
+                    <p>
+                        Eine Auswahl der produzierten Filme.<br>
+                        Mehr Information zu den Projekten und Mitwirkenden
+                        finden Sie auf Vimeo.
+                    </p>
+                    <div class="showroom_video">
+                        <img src="resources/showroom_video.png" alt="">
+                    </div>
+                    <h2>Zukunft mit Herz</h2>
+                    <div class="showroom_video">
+                        <img src="resources/showroom_video.png" alt="">
+                    </div>
+                    <h2>Anko Fitness</h2>
+                    <div class="showroom_video">
+                        <img src="resources/showroom_video.png" alt="">
+                    </div>
+                    <h2>Agent 007</h2>
+                    <a href="#" class="showroom_button">Show more</a>
                 </div>
-                <h2>Zukunft mit Herz</h2>
-                <div class="showroom_video">
-                    <img src="resources/showroom_video.png" alt="">
-                </div>
-                <h2>Anko Fitness</h2>
-                <div class="showroom_video">
-                    <img src="resources/showroom_video.png" alt="">
-                </div>
-                <h2>Agent 007</h2>
-                <a href="#" class="showroom_button">Show more</a>
             </div>
         </section>
         <section id="about">
@@ -150,35 +170,38 @@
         </section>
         <section id="contact">
             <div class="contact_container">
-                <h1>contact</h1>
-                <h4>CEO: Constantin Lederer<br>Cameraman - Cutter - Colorist</h4>
-                <div class="business_card">
-                    <div class="text">
-                        <h5>Let's get in touch!</h5>
-                        <h6>office@realtimefilms.at</h6>
-                        <h6>+43 699 150 450 66</h6>
+                <div class="contact_content">
+                    <h1>contact</h1>
+                    <h4>CEO: Constantin Lederer<br>Cameraman - Cutter - Colorist</h4>
+                    <div class="business_card">
+                        <div class="text">
+                            <h5>Let's get in touch!</h5>
+                            <h6>office@realtimefilms.at</h6>
+                            <h6>+43 699 150 450 66</h6>
+                        </div>
+                        <img src="resources/Foto_12.jpg" alt="">
                     </div>
-                    <img src="resources/Foto_12.jpg" alt="">
+                    <div class="contact_text">
+                        <h4>Kontaktieren Sie mich gerne für ein unverbindliches Angebot zu Ihrem Filmprojekt.</h4>
+                        <h6>We visualize your ideas.</h6>
+                    </div>
+                    <form class="contact_form" action="index.html" method="post">
+                        <div class="form_group">
+                            <label for="name">Name*</label>
+                            <input id="name" name="name" required="">
+                        </div>
+                        <div class="form_group">
+                            <label for="email">E-Mail Adresse*</label>
+                            <input id="email" name="email" required="">
+                        </div>
+                        <div class="form_group">
+                            <label for="message">Nachricht*</label>
+                            <textarea name="message" rows="8" cols="30" required=""></textarea>
+                        </div>
+                        <button type="contact_button" type="submit">Senden</button>
+                    </form>
                 </div>
-                <div class="contact_text">
-                    <h4>Kontaktieren Sie mich gerne für ein unverbindliches Angebot zu Ihrem Filmprojekt.</h4>
-                    <h6>We visualize your ideas.</h6>
-                </div>
-                <form class="contact_form" action="index.html" method="post">
-                    <div class="form_group">
-                        <label for="name">Name*</label>
-                        <input id="name" name="name" required="">
-                    </div>
-                    <div class="form_group">
-                        <label for="email">E-Mail Adresse*</label>
-                        <input id="email" name="email" required="">
-                    </div>
-                    <div class="form_group">
-                        <label for="message">Nachricht*</label>
-                        <textarea name="message" rows="8" cols="30" required=""></textarea>
-                    </div>
-                    <button type="contact_button" type="submit">Senden</button>
-                </form>
+
                 <div class="social_media">
                     <p>
                         <span><a href="#">Instagram</a></span>
@@ -197,7 +220,8 @@
             </div>
         </section>
 
-        <script src="main.js" type="text/javascript">
-        </script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>
