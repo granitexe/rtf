@@ -8,6 +8,24 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
+        <!-- Navigation Bar -->
+        <section id="nav-bar" class="container">
+            <div class="nav">
+                <header class="nav-bar">
+                    <div class="logo"><a href="#landing" class="logo_img"></a></div>
+                    <div class="nav-list">
+                    <div class="hamburger">
+                      <div class="bar"></div>
+                    </div>
+                    <ul>
+                      <li><a href="#explain">Info</a></li>
+                      <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                  </div>
+                </header>
+            </div>
+        </section>
+        <!-- END Navigation Bar -->
         <section id='landing'>
             <div class="landing_container">
                 <div class="video">
@@ -219,9 +237,25 @@
                 <p class="coppyright">Realtime Films © 2022</p>
             </div>
         </section>
+        <div class="bottom"></div>
 
         <script src="main.js" type="text/javascript"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script>
+            const nav = document.querySelector(".nav");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY) {
+                    nav.classList.add("nav--hidden");
+                }
+                else {
+                    nav.classList.remove("nav--hidden");
+                }
+
+                lastScrollY = window.scrollY;
+            })
+        </script>
     </body>
 </html>
