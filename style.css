@@ -45,13 +45,25 @@ p {
     font-size: 3vw;
 }
 
-.responsive-container {
-    overflow: hidden;
+iframe {
+    width: 640px;
+    height: 360px;
 }
 
-.responsive-container iframe {
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+       font-size: 25px;
+    }
+    iframe {
+        width: 540px;
+        height: 260px;
+    }
 }
 
 .bottom {
@@ -86,7 +98,6 @@ p {
 
 .nav--hidden {
     transform: translateY(-100px);
-
 }
 
 .nav .logo .logo_img {
@@ -101,7 +112,7 @@ p {
 .nav-bar {
 	left: 0;
 	top: 0;
-	padding: 0 70px;
+	padding: 0 40px;
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -323,7 +334,7 @@ p {
     margin: 0 auto;
 }
 
-.showreel img{
+.showreel img {
     margin: 2rem 0;
     width: 100%;
 }
@@ -340,7 +351,7 @@ p {
     padding: 2%;
 }
 
-.welcome_conatiner .images .image img{
+.welcome_conatiner .images .image img {
     width: 100%;
 }
 
@@ -358,13 +369,14 @@ p {
 }
 
 .news_container .news_video {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .news_container .news_video iframe {
-    margin: 0;
+    margin-bottom: 10px;
     width: 100%;
 }
+
 
 .showroom_container {
     background-color: rgb(15, 15, 15);
@@ -378,10 +390,13 @@ p {
 }
 
 .showroom_container h2 {
-    margin: 0;
+    margin-bottom: 60px;
     padding: 0;
 }
 
+.showroom_container p {
+    margin-bottom: 60px;
+}
 
 .showroom_container .showroom_video iframe {
     margin-bottom: 10px;
@@ -590,8 +605,9 @@ p {
 
 .contact_container .contact_content .business_card img {
     width: 30vw;
-    max-width: 35%;
-    max-height: 35%;
+    height: 30vw;
+    max-width: 270px;
+    max-height: 270px;
 }
 
 .contact_container .contact_content .contact_text {
@@ -804,6 +820,98 @@ input {
     .contact_container .coppyright {
         color: black;
         font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    .contact_container .contact_content .contact_text {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact_container .contact_content h4 {
+        font-size: 25px;
+    }
+
+    .contact_container .contact_content .business_card .text h5 {
+        font-size: 35px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input, textarea {
+        font-size: 25px;
+        padding: 0 5px;
+    }
+
+    input {
+        height: 35px;
+    }
+
+    .contact_container .contact_content h4 {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 20px;
+        padding-right: 15%;
+    }
+
+    .contact_container .contact_content .contact_text h6 {
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        padding-right: 15%;
+        padding-left: 5%;
+    }
+
+    .contact_container .contact_content .business_card .text h6 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact_container .contact_content .contact_form button {
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        width: 150px;
+        font-size: 30px;
+        text-shadow: none;
+        transition: ease all 0.4s;
+    }
+
+    .contact_container .social_media p {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .contact_container .social_media a {
+        margin: 0 5px 0 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact_container .links p {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .contact_container .links a {
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact_container .coppyright {
+        color: black;
+        font-size: 15px;
         letter-spacing: 0.2px;
     }
 
