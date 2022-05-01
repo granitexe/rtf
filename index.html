@@ -14,13 +14,17 @@
                 <header class="nav-bar">
                     <div class="logo"><a href="#landing" class="logo_img"></a></div>
                     <div class="nav-list">
-                    <div class="hamburger">
-                      <div class="bar"></div>
-                    </div>
-                    <ul>
-                      <li><a href="#explain">Info</a></li>
-                      <li><a href="#contact">Kontakt</a></li>
-                    </ul>
+                        <div class="hamburger">
+                          <div class="bar"></div>
+                        </div>
+                        <ul>
+                          <li><a class="menu0" href="#welcome">Showreel</a></li>
+                          <li><a class="menu1" href="#news">News</a></li>
+                          <li><a class="menu2" href="#showroom">Showroom</a></li>
+                          <li><a class="menu3" href="#about">About</a></li>
+                          <li><a class="menu4" href="#what">What We Do</a></li>
+                          <li><a class="menu5" href="#contact">Contact</a></li>
+                        </ul>
                   </div>
                 </header>
             </div>
@@ -47,7 +51,13 @@
                         den Dreharbeiten bis zum Rendern.
                     </p>
                     <div class="showreel">
-                        <img src="resources/Foto_2.png" alt="">
+                        <div
+                          data-aos="zoom-in"
+                          data-aos-delay="200"
+                          data-aos-duration="1500"
+                          >
+                            <img src="resources/Foto_2.png" style="wdith:100%">
+                        </div
                     </div>
                     <p>
                         Seit 2017 produziert Realtime Films visuelle
@@ -59,25 +69,25 @@
                     </p>
                     <div class="images">
                         <div class="image"
-                          data-aos="fade-up"
+                          data-aos="fade-down"
                           data-aos-delay="100"
                           data-aos-duration="1000"
                           >
                             <img src="resources/Foto_3.jpg" style="wdith:100%">
                         </div>
                         <div class="image"
-                          data-aos="fade-up"
+                          data-aos="fade-down"
                           data-aos-delay="200"
                           data-aos-duration="1000"
                           >
                             <img src="resources/Foto_4.jpg" style="wdith:100%">
                         </div>
                         <div class="image"
-                          data-aos="fade-up"
+                          data-aos="fade-down"
                           data-aos-delay="350"
                           data-aos-duration="1000"
                           >
-                            <img src="resources/Foto_5.jpg" style="wdith:100%; height:100%">
+                            <img src="resources/Foto_5.jpg" style="wdith:100%">
                         </div>
                     </div>
                 </div>
@@ -90,9 +100,17 @@
                     <p>
                         Der neueste Film auf einen Blick.
                     </p>
-                    <div class="news_video">
-                        <img src="resources/Foto_6.png" alt="">
+                    <div class="news_video"></div>
+                    <div class="responsive-container">
+                        <!--<img src="resources/Foto_6.png" alt="">-->
+                        <iframe src="https://player.vimeo.com/video/651591056?h=f3e8718066?byline=0&portrait=0&title=0"
+                        width="800"
+                        height="450"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
+
                     <h2>ORG Schulschwestern</h2>
                 </div>
             </div>
@@ -106,16 +124,41 @@
                         Mehr Information zu den Projekten und Mitwirkenden
                         finden Sie auf Vimeo.
                     </p>
-                    <div class="showroom_video">
-                        <img src="resources/showroom_video.png" alt="">
+                    <div class="showroom_video"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                    data-aos-duration="700">
+                        <!--<img src="resources/showroom_video.png" alt="">-->
+                        <iframe src="https://player.vimeo.com/video/571191648?h=9061805ac1&title=0&byline=0&portrait=0"
+                        width="640"
+                        height="360"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
                     <h2>Zukunft mit Herz</h2>
-                    <div class="showroom_video">
-                        <img src="resources/showroom_video.png" alt="">
+                    <div class="showroom_video"
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                    data-aos-duration="700">
+                        <iframe src="https://player.vimeo.com/video/573910886?h=52bf67e2f2&title=0&byline=0&portrait=0"
+                        width="640"
+                        height="360"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
                     <h2>Anko Fitness</h2>
-                    <div class="showroom_video">
-                        <img src="resources/showroom_video.png" alt="">
+                    <div class="showroom_video"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                    data-aos-duration="700">
+                        <iframe src="https://player.vimeo.com/video/456497823?h=c42ec9e333&title=0&byline=0&portrait=0"
+                        width="640"
+                        height="360"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
                     <h2>Agent 007</h2>
                     <a href="#" class="showroom_button">Show more</a>
@@ -135,7 +178,14 @@
                     Drehbücher, Storyboards und Shotlisten.
                 </p>
                 <div class="about_img">
-                    <img src="resources/Foto_8.jpg" alt="">
+                    <div id="slider">
+                        <figure>
+                            <img src="resources/set1.jpg">
+                            <img src="resources/set2.jpg">
+                            <img src="resources/set3.jpg">
+                            <img src="resources/set1.jpg">
+                        </figure>
+                    </div
                 </div>
                 <p>
                     Durch cineastische Bildästhetik in Verbindung mit
@@ -165,24 +215,48 @@
             <div class="what_container">
                 <h1>what we do</h1>
                 <div class="what_categories">
-                    <a href="#" class="what_category imagefilme">
-                        Imagefilme
-                    </a>
-                    <a href="#" class="what_category werbespots">
-                        Werbespots
-                    </a>
-                    <a href="#" class="what_category produktvideos">
-                        Produktvideos
-                    </a>
-                    <a href="#" class="what_category hochzeitsfilme">
-                        Hochzeitsfilme
-                    </a>
-                    <a href="#" class="what_category musikvideos">
-                        Musikvideos
-                    </a>
-                    <a href="#" class="what_category andmore">
-                        and more.
-                    </a>
+                    <div class="sub">
+                        <a href="#" class="what_category imagefilme"
+                          data-aos="fade-right"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            Imagefilme
+                        </a>
+                        <a href="#" class="what_category werbespots"
+                          data-aos="fade-left"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            Werbespots
+                        </a>
+                    </div>
+                    <div class="sub">
+                        <a href="#" class="what_category produktvideos"
+                          data-aos="fade-right"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            Produktvideos
+                        </a>
+                        <a href="#" class="what_category hochzeitsfilme"
+                          data-aos="fade-left"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            Hochzeitsfilme
+                        </a>
+                    </div>
+                    <div class="sub">
+                        <a href="#" class="what_category musikvideos"
+                          data-aos="fade-right"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            Musikvideos
+                        </a>
+                        <a href="#" class="what_category andmore"
+                          data-aos="fade-left"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
+                            and more.
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -192,18 +266,27 @@
                     <h1>contact</h1>
                     <h4>CEO: Constantin Lederer<br>Cameraman - Cutter - Colorist</h4>
                     <div class="business_card">
-                        <div class="text">
+                        <div class="text"
+                        data-aos="fade-right"
+                        data-aos-delay="350"
+                        data-aos-duration="1000">
                             <h5>Let's get in touch!</h5>
                             <h6>office@realtimefilms.at</h6>
                             <h6>+43 699 150 450 66</h6>
                         </div>
-                        <img src="resources/Foto_12.jpg" alt="">
+                        <img src="resources/Foto_12.jpg" alt=""
+                          data-aos="fade"
+                          data-aos-delay="350"
+                          data-aos-duration="1000">
                     </div>
                     <div class="contact_text">
                         <h4>Kontaktieren Sie mich gerne für ein unverbindliches Angebot zu Ihrem Filmprojekt.</h4>
                         <h6>We visualize your ideas.</h6>
                     </div>
-                    <form class="contact_form" action="index.html" method="post">
+                    <form class="contact_form" action="index.html" method="post"
+                    data-aos="fade-down"
+                    data-aos-delay="350"
+                    data-aos-duration="1000">
                         <div class="form_group">
                             <label for="name">Name*</label>
                             <input id="name" name="name" required="">
