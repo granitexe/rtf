@@ -334,7 +334,7 @@ iframe {
     margin: 0 auto;
 }
 
-.showreel img {
+.showreel iframe {
     margin: 2rem 0;
     width: 100%;
 }
@@ -861,15 +861,23 @@ input {
 
     .contact_container .contact_content .contact_text h6 {
         padding-top: 20px;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 600;
         padding-right: 15%;
         padding-left: 5%;
     }
 
+    .contact_container .contact_content .business_card {
+        flex-direction: column-reverse;
+    }
+
+    .contact_container .contact_content .business_card img {
+        margin: 0 auto;
+    }
+
     .contact_container .contact_content .business_card .text h6 {
         padding-top: 20px;
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -904,9 +912,13 @@ input {
     }
 
     .contact_container .links a {
-        margin: 0 10px 0 10px;
+        margin: 0 0.5vw 0 1vw;
         text-decoration: none;
         color: black;
+    }
+
+    .contact_container .social_media a {
+        margin: 0 0.5vw 0 1vw;
     }
 
     .contact_container .coppyright {
@@ -917,5 +929,15 @@ input {
 
     .contact_container .contact_content .contact_text {
         padding-bottom: 40px;
+    }
+
+    .contact_container .social_media p span:not(:first-child) {
+        margin: 0;
+        border-left: 1px solid black;
+    }
+
+    .contact_container .links p span:not(:first-child) {
+        margin: 0;
+        border-left: 1px solid black;
     }
 }
