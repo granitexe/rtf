@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   box-sizing: border-box;
 }
 
@@ -42,7 +44,7 @@ p {
     margin: 1vh 4vw 1vh 4vw;
     color: white;
     font-size: 25px;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 iframe {
@@ -93,7 +95,7 @@ iframe {
 	position: fixed;
 	z-index: 100;
     transition: transform 0.2s;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(20, 20, 20, 0.9);
 }
 
 .nav--hidden {
@@ -355,6 +357,7 @@ iframe {
     width: 100%;
 }
 
+
 .news_container {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.7)),
         url('resources/Foto_7.jpg');
@@ -433,12 +436,20 @@ iframe {
     transition: ease all 0.4s;
 }
 
-.about_container {
+
+#about {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.7)),
         url('resources/Foto_9.jpg');
     background-size: cover;
+}
+
+.about_container {
     padding-bottom: 7vw;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about_container p {
+    text-align: justify;
 }
 
 .about_container .about_img {
@@ -448,7 +459,7 @@ iframe {
 #slider {
     overflow: hidden;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     margin: 30px auto;
 }
 
@@ -492,6 +503,13 @@ iframe {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .about_container {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
 
 
 .what_container {
@@ -513,7 +531,8 @@ iframe {
 .what_container .what_categories .what_category{
     text-align: center;
     font-size: 6vw;
-    font-weight: bold;
+    font-weight: 900;
+    text-shadow: none;
     color: white;
     padding: 4.5vw 0;
     text-decoration: none;
@@ -533,10 +552,10 @@ iframe {
     background: url('resources/what3.png');
 }
 .hochzeitsfilme {
-    background: url('resources/what4.jpg');
+    background: url('resources/what4.png');
 }
 .musikvideos {
-    background: url('resources/what5.jpg');
+    background: url('resources/what5.png');
 }
 .andmore {
     background: url('resources/what6.png');
@@ -550,7 +569,7 @@ iframe {
     }
 
     .what_container .what_categories .what_category{
-        font-size: 40px;
+        font-size: 45px;
         padding: 30px 15px;
         width: 100%;
         margin: 20px 20px;
@@ -768,7 +787,7 @@ input {
 
     .contact_container .contact_content .contact_text h6 {
         padding-top: 20px;
-        font-size: 55px;
+        font-size: 30px;
         font-weight: 600;
         padding-right: 15%;
         padding-left: 5%;
