@@ -48,8 +48,3 @@ var greet = function() {
   });
 };
 // END landing scroll button
-
-// Smooth scrolling
-import smoothscroll from 'smoothscroll-polyfill';
-
-smoothscroll.polyfill();

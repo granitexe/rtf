@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo Black');
 
 * {
   margin: 0;
@@ -24,10 +25,11 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 8vw;
-    font-weight: 900;
+    font-weight: 400;
     color: white;
     padding-top: 4vw;
     padding-bottom: 5px;
+    font-family: 'Archivo Black';
 }
 
 h2 {
@@ -60,7 +62,7 @@ iframe {
         font-size: 30px;
     }
     p {
-       font-size: 25px;
+       font-size: 15px;
     }
     iframe {
         width: 540px;
@@ -897,14 +899,14 @@ input {
         text-align: center;
         font-weight: 400;
         padding-bottom: 20px;
-        padding-right: 15%;
+        padding-right: 0;
     }
 
     .contact_container .contact_content .contact_text h6 {
         padding-top: 20px;
         font-size: 22px;
         font-weight: 600;
-        padding-right: 15%;
+        padding-right: 0;
         padding-left: 5%;
     }
 
