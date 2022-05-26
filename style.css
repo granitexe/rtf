@@ -384,6 +384,7 @@ iframe {
 .showroom_container {
     background-color: rgb(15, 15, 15);
     padding-bottom: 5vw;
+    overflow-x: hidden;
 }
 
 .showroom_content {
@@ -516,6 +517,7 @@ iframe {
 .what_container {
     background: black;
     padding-bottom: 7vw;
+    overflow-x: hidden;
 }
 
 .what_container .what_categories {
