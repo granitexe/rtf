@@ -446,6 +446,7 @@ iframe {
 .about_container {
     padding-bottom: 7vw;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
 }
 
 .about_container p {
@@ -579,6 +580,7 @@ iframe {
 .contact_container {
     background-color: white;
     text-shadow: none;
+    overflow-x: hidden;
 }
 
 .contact_content {
