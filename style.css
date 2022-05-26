@@ -103,6 +103,7 @@ iframe {
 }
 
 .nav .logo .logo_img {
+    margin-top: 2px;
     display: inline-block;
     height: 30px;
     width: 100px;
@@ -114,7 +115,9 @@ iframe {
 .nav-bar {
 	left: 0;
 	top: 0;
-	padding: 0 40px;
+	padding: 0;
+    padding-left: 15px;
+    padding-right: 40px;
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -382,7 +385,7 @@ iframe {
 
 
 .showroom_container {
-    background-color: rgb(15, 15, 15);
+    background-color: black;
     padding-bottom: 5vw;
     overflow-x: hidden;
 }
@@ -396,6 +399,10 @@ iframe {
 .showroom_container h2 {
     margin-bottom: 60px;
     padding: 0;
+}
+
+.showroom_content a {
+    color: white;
 }
 
 .showroom_container p {
@@ -422,6 +429,12 @@ iframe {
     transition: ease all 0.4s;
 }
 
+.showroom_container .showroom_button:hover {
+    color: white;
+    background-color: black;
+    transition: ease all 0.4s;
+}
+
 
 @media screen and (min-width: 1200px) {
     .showroom_container .showroom_button {
@@ -431,11 +444,16 @@ iframe {
     }
 }
 
-.showroom_container .showroom_button:hover {
-    color: white;
-    background-color: black;
-    transition: ease all 0.4s;
+@media screen and (max-width: 500px) {
+    .showroom_container .showroom_button {
+        margin: 30px auto;
+        width: 170px;
+        font-size: 28px;
+        text-shadow: none;
+        transition: ease all 0.4s;
+    }
 }
+
 
 
 #about {
